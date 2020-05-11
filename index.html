@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Previous & Next practice</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<img class="image"></img>
+		
+        <div class="dots">
+			<img src="./img/left.png" class="btn-left" onclick="prev()" alt="">
+			<span class="toggleBtn left" onclick="imageMarker()">Image Box</span>
+			<div class="dot" onclick="setImage('./img/bg-1.jpg', 0), markerHandler()"></div>
+			<div class="dot" onclick="setImage('./img/bg-2.jpg', 1), markerHandler()"></div>
+			<div class="dot" onclick="setImage('./img/bg-3.jpg', 2), markerHandler()"></div>
+			<div class="dot" onclick="setImage('./img/bg-4.jpg', 3), markerHandler()"></div>
+			<div class="dot" onclick="setImage('./img/bg-5.jpg', 4), markerHandler()"></div>
+			<div class="dot" onclick="setImage('./img/bg-6.jpg', 5), markerHandler()"></div>
+			<img src="./img/right.png" class="btn-right" onclick="next()" alt="">
+			<span class="toggleBtn right" onclick="dottedMarker()">Color Box</span>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
